@@ -16,11 +16,16 @@ export class VacancyComponent implements OnInit {
 
   @Input()
   vacancy: IJob;
-
+  date: Date;
+  currentDate: Date;
+  createdAt: number;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.date = new Date(this.vacancy.createdAt);
+    this.currentDate = new Date();
+    this.createdAt = this.currentDate.getFullYear() - this.date.getFullYear()
   }
 
 }

@@ -1,74 +1,71 @@
-<div class="ml-[347px] mt-[56px] mb-[162px] flex gap-[133px]">
-  <div class="w-[723px] flex-col divide-y">
-    <div class="py-2 flex gap-8">
-      <p class="mr-14 font-sans text-[28px] text-[#3A4562] font-bold leading-7">Job Details</p>
-      <div class="flex items-center">
-        <fa-icon class="mr-3 text-xl text-[#3A4562]" [icon]="bookmark"></fa-icon>
-        <p class="font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">Save to my list</p>
+<div class="ml-[15px] sm:ml-[347px] mt-[56px] mb-[162px] flex gap-[133px]">
+  <div class="sm:w-[723px] flex-col divide-y">
+    <div class="py-[8px] sm:py-2 flex gap-8">
+      <p class="sm:mr-14 font-sans text-[28px] text-[#3A4562] font-bold leading-7">Job Details</p>
+      <div class="flex sm:flex items-center">
+        <fa-icon class="mr-[4px] sm:mr-3 text-xl text-[#3A4562]" [icon]="bookmark"></fa-icon>
+        <p class="sm:font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">Save to my list</p>
       </div>
-      <div class="flex items-center">
-        <fa-icon class="mr-3 text-xl text-[#3A4562]" [icon]="share"></fa-icon>
-        <p class="font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">Share</p>
+      <div class="flex sm:flex items-center">
+        <fa-icon class="mr-[4px] sm:mr-3 text-xl text-[#3A4562]" [icon]="share"></fa-icon>
+        <p class="sm:font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">Share</p>
       </div>
     </div>
     <div>
-      <div class="mt-[55px]">
-        <button class="py-[18px] px-[30px] bg-[#384564] rounded-[8px] font-sans text-[#FFFFFF] text-base font-semibold">Apply now</button>
-      </div>
-      <div class="mt-[32px] mb-[32px] flex justify-between">
-        <div class="w-[515px]">
-          <p class="mb-[7px] font-sans text-[24px] font-bold leading-7 tracking-[-0.75px] text-[#3A4562]">{{vacancy.title}}</p>
-          <p class="font-sans text-lg leading-5 font-normal text-gray-500">Posted 2 days ago</p>
+      <div class="mt-[32px] sm:mt-[32px] mb-[32px] flex justify-between">
+        <div class="sm:w-[515px]">
+          <p class="sm:mb-[7px] font-sans text-[24px] font-bold leading-7 tracking-[-0.75px] text-[#3A4562]">{{vacancy.title}}</p>
+          <p class="mt-[8px] sm:font-sans text-lg leading-5 font-normal text-gray-500">Posted 2 days ago</p>
         </div>
         <div>
-          <p class="font-sans text-[20px] font-bold leading-7 tracking-[-0.625px] text-[#3A4562]">{{vacancy.salary}}</p>
-          <p class="font-sans text-[20px] leading-5 tracking-[-0.5625px] font-normal text-[#3A4562]">Brutto,per year</p>
+          <p class="sm:font-sans text-[20px] font-bold leading-7 tracking-[-0.625px] text-[#3A4562]">{{vacancy.salary}}</p>
+          <p class="sm:font-sans text-[20px] leading-5 tracking-[-0.5625px] font-normal text-[#3A4562]">Brutto,per year</p>
         </div>
       </div>
-      <div class="mb-[32px]">
-        <p class="mb-[7px] font-sans text-[20px] font-bold leading-7 tracking-[-0.625px] text-[#3A4562]">Responsibilities</p>
-        <p class="font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">{{vacancy.description}}</p>
+      <div class="mb-[32px] sm:mb-[32px]">
+        <p class="sm:mb-[7px] font-sans text-[20px] font-bold leading-7 tracking-[-0.625px] text-[#3A4562]">Responsibilities</p>
+        <p class="sm:font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">{{vacancy.description}}</p>
       </div>
       <div>
-        <p class="mb-[7px] font-sans text-[20px] font-bold leading-7 tracking-[-0.625px] text-[#3A4562]">Compensation & Benefits:</p>
-        <ul class="font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]"
+        <p class="mb-[7px] sm:mb-[7px] font-sans text-[20px] font-bold leading-7 tracking-[-0.625px] text-[#3A4562]">Compensation & Benefits:</p>
+        <ul class="py-[3px] sm:font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]"
             *ngFor="let benefit of vacancy.benefits">
           <li>{{benefit}}</li>
         </ul>
-        <div class="mt-[32px]">
-          <button class="py-[18px] px-[30px] bg-[#384564] rounded-[8px] font-sans text-[#FFFFFF] text-base font-semibold">Apply now</button>
+        <div class="mt-[20px] sm:mt-[32px]">
+          <button class="min-h-[52px] sm:py-[18px] px-[30px] bg-[#384564] rounded-[8px] font-sans text-[#FFFFFF] text-base font-semibold">Apply now</button>
         </div>
       </div>
-      <div class="mt-[86px]">
-        <div class="flex-col divide-y">
-          <p class="py-2 mr-14 font-sans text-[28px] text-[#3A4562] font-bold leading-7">Additional info</p>
+      <div class="mt-[100px] sm:mt-[86px]">
+        <div class="sm:flex-col divide-y">
+          <p class="py-[10px] sm:py-2 mr-14 font-sans text-[28px] text-[#3A4562] font-bold leading-7">Additional info</p>
           <div>
-            <div class="mt-[15px]">
-              <p class="font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">Employment type</p>
-              <div class="mt-[10px] flex gap-[8px]">
-                <p class="h-12 py-[17px] px-[50px] flex items-center bg-slate-200 border-[1px] border-[rgba(85,105,158,0.3)] rounded-[8px] font-sans text-[16px] leading-4 font-bold tracking-[-0.457143px] text-[#55699E]"
+            <div class="mt-[10px] sm:mt-[15px]">
+              <p class="sm:font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">Employment type</p>
+              <div class="mt-[10px] sm:mt-[10px] flex gap-[8px]">
+                <p class="sm:h-12 py-[17px] px-[50px] flex items-center bg-slate-200 border-[1px] border-[rgba(85,105,158,0.3)] rounded-[8px] font-sans text-[16px] leading-4 font-bold tracking-[-0.457143px] text-[#55699E]"
                    *ngFor="let type of vacancy.employment_type">{{type}}</p>
               </div>
             </div>
-            <div class="mt-[23px]">
-              <p class="font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">Benefits</p>
-              <div class="mt-[10px] flex gap-[10px]">
-                <p class="h-12 py-[17px] px-[50px] flex items-center bg-amber-100 border-[1px] border-[#FFCF00] rounded-[8px] font-sans text-[16px] leading-4 font-bold tracking-[-0.457143px] text-[#988B49]"
+            <div class="mt-[10px] sm:mt-[23px]">
+              <p class="sm:font-sans text-[20px] leading-5 font-normal tracking-[-0.5625px] text-[#3A4562]">Benefits</p>
+              <div class="mt-[10px] sm:mt-[10px] flex gap-[10px]">
+                <p class="sm:h-12 py-[17px] px-[50px] flex items-center bg-amber-100 border-[1px] border-[#FFCF00] rounded-[8px] font-sans text-[16px] leading-4 font-bold tracking-[-0.457143px] text-[#988B49]"
                    *ngFor="let benefit of vacancy.benefits">{{benefit}}</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="mt-[87px] flex-col divide-y">
-          <p class="py-2 mr-14 font-sans text-[28px] text-[#3A4562] font-bold leading-7">Attached images</p>
-          <div class="flex gap-[10px]">
-            <img class="mt-[12px] h-[133px] w-[234px] rounded-[20px]" *ngFor="let image of vacancy.pictures" src="{{image}}">
+        <div class="mt-[87px] sm:mt-[87px] flex-col divide-y">
+          <p class="py-[8px] sm:py-2 mr-14 font-sans text-[28px] text-[#3A4562] font-bold leading-7">Attached images</p>
+          <div class="sm:flex gap-[10px]">
+            <img class="mt-[12px] sm:mt-[12px] h-[133px] w-[234px] rounded-[20px]" *ngFor="let image of vacancy.pictures" src="{{image}}">
           </div>
         </div>
-        <div class="pt-[89px]">
-          <button class="w-[213px] h-[50px] rounded-[8px] absolute bg-gray-200 font-bold text-[13px] font-semibold leading-[16px] text-center uppercase text-[#3A4562]"
+        <div class="pt-[89px] sm:pt-[89px]">
+          <button class="sm:w-[213px] h-[50px] rounded-[8px] absolute bg-gray-200 font-bold text-[13px] font-semibold leading-[16px] text-center uppercase text-[#3A4562]"
           (click)="previousPage()">
-            <fa-icon class="text-xl pr-[10px] relative left-[0px] right-[0px] top-[2px] bottom-[0px]" [icon]="return"></fa-icon>
+            <fa-icon class="sm:text-xl pr-[10px] relative left-[0px] right-[0px] top-[2px] bottom-[0px]" [icon]="return"></fa-icon>
             Return to job Board
           </button>
         </div>
@@ -76,15 +73,15 @@
     </div>
   </div>
   <div>
-    <div class="h-[200px] w-[427px] bg-no-repeat bg-[url('src/assets/Combined_Shape.svg')] bg-[#2A3047] flex justify-center items-center">
+    <div class="sm:h-[200px] w-[427px] bg-no-repeat bg-[url('src/assets/Combined_Shape.svg')] bg-[#2A3047] flex justify-center items-center">
       <div>
-        <p class="font-sans text-[20px] font-bold leading-[25px] tracking-[-0.625px] text-[#E7EAF0]">{{vacancy.name}}</p>
-        <div class=" mt-[8px] mb-[7px] flex">
-          <fa-icon class="mr-[8px] text-gray-500" [icon]="location"></fa-icon>
-          <p class="text-[18px] font-normal leading-[24px] tracking-[-0.5625px] text-[#E8EBF3]">{{vacancy.address}}</p>
+        <p class="sm:font-sans text-[20px] font-bold leading-[25px] tracking-[-0.625px] text-[#E7EAF0]">{{vacancy.name}}</p>
+        <div class="sm: mt-[8px] mb-[7px] flex">
+          <fa-icon class="sm:mr-[8px] text-gray-500" [icon]="location"></fa-icon>
+          <p class="sm:text-[18px] font-normal leading-[24px] tracking-[-0.5625px] text-[#E8EBF3]">{{vacancy.address}}</p>
         </div>
-        <p class="text-[18px] font-normal leading-[24px] tracking-[-0.5625px] text-[#E8EBF3]">{{vacancy.phone}}</p>
-        <p class="text-[18px] font-normal leading-[24px] tracking-[-0.5625px] text-[#E8EBF3]">{{vacancy.email}}</p>
+        <p class="sm:text-[18px] font-normal leading-[24px] tracking-[-0.5625px] text-[#E8EBF3]">{{vacancy.phone}}</p>
+        <p class="sm:text-[18px] font-normal leading-[24px] tracking-[-0.5625px] text-[#E8EBF3]">{{vacancy.email}}</p>
       </div>
     </div>
     <google-map height="220px" width="427px">
