@@ -1,0 +1,24 @@
+<div class="w-full mx-4 my-6 px-4 py-6 bg-white rounded-lg flex justify-between shadow-[2px_1px_7px_rgba(0,0,0,0.08),0px_2px_1px_-1px_rgba(0,0,0,0.04),0px_1px_3px_rgba(0,0,0,0.12)]">
+    <div class="m-2 flex">
+      <div class="mr-6">
+        <img class="w-[85px] h-[85px] rounded-full" src="{{vacancy.pictures[0]}}" alt="">
+      </div>
+      <div class="flex-col gap-x-7">
+        <a routerLink="id" class="mb-3 font-sans text-xl font-bold tracking-[-0.625px] leading-6 text-slate-600">{{vacancy.title}}</a>
+        <p class=" mb-3 font-sans text-base font-normal tracking-[-0.23619] leading-6 text-gray-500">Department name • {{vacancy.name}}</p>
+        <div class="flex gap-2">
+          <fa-icon class="text-slate-400" [icon]="location"></fa-icon>
+          <p class="font-sans text-base font-normal tracking-[-0.23619] leading-6 text-gray-500">{{vacancy.address}}</p>
+        </div>
+      </div>
+    </div>
+  <div class="m-2 flex-col">
+    <div class="flex justify-end">
+      <fa-icon class="ml-4 text-[22px] text-slate-600 hover:text-yellow-200" [icon]="bookMark"></fa-icon>
+    </div>
+    <div class="mt-9">
+      <p class="font-sans text-base font-normal tracking-[-0.23619] leading-6 text-gray-500">Posted 2 days ago</p>
+    </div>
+  </div>
+</div>
+
